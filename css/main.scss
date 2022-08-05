@@ -1,0 +1,177 @@
+
+@import 'variables';
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    background-color: $Very-Dark-Blue;
+}
+
+
+.container {
+
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+
+
+
+
+    .card {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        width: auto;
+        height: auto;
+        background-color: $Dark-Blue;
+        position: absolute;
+        border-radius: 20px;
+        padding: 30px 20px;
+
+
+        .star-icon {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 40px;
+            width: 40px;
+            background: hsl(212, 14%, 24%);
+            border-radius: 50%;
+
+            img {
+
+                width: 15px;
+                height: 15px;
+
+            }
+        }
+
+        h1 {
+            color: $White;
+            padding: 30px 0 10px 0;
+            font-family: $font-primary;
+            font-size: 2.0rem;
+            font-weight: 400;
+        }
+
+        p {
+            color: $Medium-Grey;
+            font-family: $font-primary;
+            font-size: 0.90rem;
+            font-weight: 400;
+
+        }
+
+        .list-buttons {
+
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            padding: 30px 0;
+            gap: 15px;
+
+            button {
+
+                border: none;
+                font-size: 1.0rem;
+                padding: 15px 20px;
+                border-radius: 100%;
+                background-color: hsl(212, 14%, 24%);
+                color: $Medium-Grey;
+                font-family: $font-primary;
+                cursor: pointer;
+
+            }
+
+            .active{
+                background-color: hsl(25, 97%, 53%, 1);
+                color: $White;
+            }
+        }
+
+        .submit-btn {
+
+            padding: 12px;
+            border-radius: 50px;
+            border: none;
+            background-color: hsl(25, 97%, 53%, 1);
+            color: $White;
+            font-family: $font-primary;
+            font-weight: 700;
+            cursor: pointer;
+            transition: 0.5s;
+
+            &:hover {
+
+                background-color: $White;
+                color: hsl(25, 97%, 53%, 1);
+            }
+        }
+
+
+    }
+
+    .hide{
+
+        visibility: hidden;
+    }
+
+    .card-2 {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        height: auto;
+        background-color: $Dark-Blue;
+        position: absolute;
+        border-radius: 20px;
+        padding: 30px 20px;
+        gap: 20px;
+        max-width: 40rem;
+       
+
+        img {
+
+            text-align: center;
+            max-width: 150px;
+            height: 100px;
+
+        }
+
+        span {
+
+            background-color: hsl(212, 14%, 24%);
+            color: hsl(25, 97%, 53%, 1);
+            padding: 5px 8px;
+            border-radius: 20px;
+            font-size: 0.95rem;
+            font-family: $font-primary;
+        }
+
+        h2 {
+            color: $White;
+            font-family: $font-primary;
+            font-weight: 700;
+        }
+
+        p {
+
+            color: $Light-Grey;
+            font-family: $font-primary;
+        }
+
+    }
+
+}
