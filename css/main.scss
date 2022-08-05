@@ -21,10 +21,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: auto;
-
-
-
 
     .card {
 
@@ -37,6 +33,7 @@ body {
         position: absolute;
         border-radius: 20px;
         padding: 30px 20px;
+        margin: 0px 20px;
 
 
         .star-icon {
@@ -78,7 +75,6 @@ body {
             display: flex;
             justify-content: space-between;
             padding: 30px 0;
-            gap: 15px;
 
             button {
 
