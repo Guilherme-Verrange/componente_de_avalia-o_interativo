@@ -18,7 +18,7 @@ function onSubmit() {
     console.log(score_rate);
 
     if (score_rate == "SUBMIT") {
-        alert('Escolha uma nota para avaliar');
+        alert('Choose a review to continue');
         setTimeout(function () {
             window.location.href = "index.html";
         }, 0000);
@@ -37,8 +37,6 @@ function click_btn_rate(event) {
     event.target.classList.add('active');
 
     score_rate = event.target.textContent;
-
-
 };
 
 //console.log(rate_btn);
